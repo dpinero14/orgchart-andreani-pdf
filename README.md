@@ -2,6 +2,20 @@
 
 Sistema automatizado para modificar organigramas en PDF sin alterar el diseño visual.
 
+## ⚡ Nuevo: Base de Datos de Coordenadas
+
+Ahora puedes usar una base de datos de coordenadas pre-calculadas para actualizaciones más rápidas:
+
+```bash
+# 1. Extraer coordenadas una sola vez
+python extract_coordinates.py
+
+# 2. Actualizar organigramas rápidamente
+python update_from_db.py "02_ORGANIGRAMA_LUCAS" "Lucas" "Diego Piñero"
+```
+
+**📖 [Ver documentación completa del sistema de BD](DATABASE.md)**
+
 ## 🚀 Uso Rápido
 
 ### Comando Simple
