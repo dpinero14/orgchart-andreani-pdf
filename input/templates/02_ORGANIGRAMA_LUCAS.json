@@ -1,0 +1,17 @@
+{
+  "org_id": "02_ORGANIGRAMA_LUCAS",
+  "page": 0,
+  "nodes": [
+    {
+      "node_id": "DIRECTOR_LOGISTICA",
+      "x": 7.119490206629498,
+      "y": 290.40335002213624,
+      "w": 44.67762416783217,
+      "h": 9.868502914635258,
+      "font": "Helvetica-Bold",
+      "font_size": 10,
+      "align": "center",
+      "max_lines": 3
+    }
+  ]
+}

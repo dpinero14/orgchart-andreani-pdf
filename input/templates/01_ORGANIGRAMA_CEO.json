@@ -1,0 +1,28 @@
+{
+    "org_id": "01_ORGANIGRAMA_CEO",
+    "page": 0,
+    "nodes": [
+        {
+            "node_id": "GERENTE_GENERAL",
+            "x": 220,
+            "y": 720,
+            "w": 160,
+            "h": 45,
+            "font": "Helvetica-Bold",
+            "font_size": 10,
+            "align": "center",
+            "max_lines": 2
+        },
+        {
+            "node_id": "ASISTENTE",
+            "x": 120,
+            "y": 650,
+            "w": 140,
+            "h": 40,
+            "font": "Helvetica",
+            "font_size": 9,
+            "align": "center",
+            "max_lines": 2
+        }
+    ]
+}
