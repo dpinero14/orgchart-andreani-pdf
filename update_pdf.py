@@ -56,8 +56,8 @@ def generate_text_overlay(coords, replacement_text, page_width, page_height):
     c = canvas.Canvas(packet, pagesize=(page_width, page_height))
     
     # 1. CUBRIR el texto original con un rectángulo blanco
-    # Expandir un poco la caja para asegurar que cubre todo
-    padding = 3
+    # Usar padding mínimo para no tapar elementos adyacentes
+    padding = 0.5
     c.setFillColorRGB(1, 1, 1)  # Blanco
     c.rect(
         coords['x'] - padding, 
