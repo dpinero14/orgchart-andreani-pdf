@@ -13,8 +13,36 @@ import json
 import pdfplumber
 from pathlib import Path
 
+def group_nearby_words(words, max_distance=5):
+    """Agrupa palabras que están cerca horizontalmente para formar frases."""
+    if not words:
+        return []
+    
+    # Ordenar palabras por línea (y) y luego por x
+    sorted_words = sorted(words, key=lambda w: (round(w['top']), w['x0']))
+    
+    groups = []
+    current_group = [sorted_words[0]]
+    
+    for word in sorted_words[1:]:
+        last_word = current_group[-1]
+        
+        # Verificar si están en la misma línea y cerca horizontalmente
+        same_line = abs(word['top'] - last_word['top']) < 3
+        close_horizontally = word['x0'] - last_word['x1'] < max_distance
+        
+        if same_line and close_horizontally:
+            current_group.append(word)
+        else:
+            groups.append(current_group)
+            current_group = [word]
+    
+    groups.append(current_group)
+    
+    return groups
+
 def extract_all_text_from_pdf(pdf_path):
-    """Extrae todas las palabras y sus coordenadas de un PDF."""
+    """Extrae todas las palabras y sus coordenadas de un PDF, agrupando palabras cercanas."""
     print(f"\n📄 Procesando: {pdf_path}")
     
     with pdfplumber.open(pdf_path) as pdf:
@@ -25,23 +53,35 @@ def extract_all_text_from_pdf(pdf_path):
         # Extraer todas las palabras
         words = page.extract_words()
         
+        # Agrupar palabras cercanas
+        word_groups = group_nearby_words(words)
+        
         text_elements = []
-        for word in words:
+        for group in word_groups:
+            # Combinar las palabras del grupo
+            combined_text = ' '.join(word['text'] for word in group)
+            
+            # Calcular bounding box del grupo
+            x0 = min(word['x0'] for word in group)
+            x1 = max(word['x1'] for word in group)
+            top = min(word['top'] for word in group)
+            bottom = max(word['bottom'] for word in group)
+            
             # Convertir a coordenadas PDF (bottom-left origin)
-            x = word['x0'] - 2
-            y = height - word['bottom'] - 2
-            w = (word['x1'] - word['x0']) + 4
-            h = (word['bottom'] - word['top']) + 4
+            x = x0 - 2
+            y = height - bottom - 2
+            w = (x1 - x0) + 4
+            h = (bottom - top) + 4
             
             text_elements.append({
-                'text': word['text'],
+                'text': combined_text,
                 'x': round(x, 2),
                 'y': round(y, 2),
                 'w': round(w, 2),
                 'h': round(h, 2)
             })
         
-        print(f"  ✓ Extraídos {len(text_elements)} elementos de texto")
+        print(f"  ✓ Extraídos {len(text_elements)} grupos de texto")
         
         return {
             'page_width': width,
