@@ -2,15 +2,28 @@
 
 Sistema automatizado para modificar organigramas en PDF sin alterar el diseño visual.
 
-## ⚡ Nuevo: Base de Datos de Coordenadas
+## ⚡ Nuevo: Sistema Inteligente con Detección de Superposiciones
 
-Ahora puedes usar una base de datos de coordenadas pre-calculadas para actualizaciones más rápidas:
+### 🧠 Actualizador Inteligente (Recomendado)
+Verifica automáticamente que no se cubran cargos ni líneas:
 
 ```bash
-# 1. Extraer coordenadas una sola vez
-python extract_coordinates.py
+# 1. Extraer posiciones organizacionales
+python extract_positions.py
 
-# 2. Actualizar organigramas rápidamente
+# 2. Actualizar con verificación automática de superposiciones
+python update_smart.py "02_ORGANIGRAMA_LUCAS" "Lucas Capuano" "Diego Piñero"
+```
+
+**Ventajas:**
+- ✅ Detecta elementos cercanos (cargos, títulos)
+- ✅ Ajusta automáticamente el área de reemplazo
+- ✅ Padding adaptativo según proximidad
+- ✅ Clasifica elementos: CARGO, NOMBRE, OTROS
+
+### 📊 Base de Datos de Coordenadas (Alternativa)
+```bash
+python extract_coordinates.py
 python update_from_db.py "02_ORGANIGRAMA_LUCAS" "Lucas" "Diego Piñero"
 ```
 

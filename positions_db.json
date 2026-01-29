@@ -1,0 +1,525 @@
+{
+  "version": "2.0",
+  "description": "Base de datos de posiciones organizacionales con validación de superposición",
+  "organigramas": {
+    "01_ORGANIGRAMA_CEO": {
+      "pdf_path": "input/templates/01_ORGANIGRAMA_CEO.pdf",
+      "page_dimensions": {
+        "width": 595.2756,
+        "height": 841.8898
+      },
+      "cargos": [],
+      "nombres": [],
+      "otros": []
+    },
+    "02_ORGANIGRAMA_LUCAS": {
+      "pdf_path": "input/templates/02_ORGANIGRAMA_LUCAS.pdf",
+      "page_dimensions": {
+        "width": 792.0,
+        "height": 612.0
+      },
+      "cargos": [
+        {
+          "text": "GERENTA DE",
+          "x": 499.72,
+          "y": 315.0,
+          "w": 39.46,
+          "h": 9.87,
+          "type": "CARGO"
+        },
+        {
+          "text": "DIRECTOR",
+          "x": 13.24,
+          "y": 311.52,
+          "w": 32.55,
+          "h": 9.87,
+          "type": "CARGO"
+        },
+        {
+          "text": "DIRECTOR",
+          "x": 133.96,
+          "y": 311.52,
+          "w": 32.55,
+          "h": 9.87,
+          "type": "CARGO"
+        },
+        {
+          "text": "DIRECTOR DE",
+          "x": 190.96,
+          "y": 311.52,
+          "w": 41.7,
+          "h": 9.87,
+          "type": "CARGO"
+        },
+        {
+          "text": "GERENTE DE",
+          "x": 315.04,
+          "y": 311.52,
+          "w": 39.46,
+          "h": 9.87,
+          "type": "CARGO"
+        },
+        {
+          "text": "DIRECTORA DE",
+          "x": 373.72,
+          "y": 311.52,
+          "w": 45.31,
+          "h": 9.87,
+          "type": "CARGO"
+        },
+        {
+          "text": "FACILITY AND",
+          "x": 437.44,
+          "y": 311.52,
+          "w": 41.08,
+          "h": 9.87,
+          "type": "CARGO"
+        },
+        {
+          "text": "DIRECTOR",
+          "x": 626.32,
+          "y": 311.52,
+          "w": 32.55,
+          "h": 9.87,
+          "type": "CARGO"
+        },
+        {
+          "text": "DIRECTOR DE",
+          "x": 683.32,
+          "y": 311.52,
+          "w": 41.87,
+          "h": 9.87,
+          "type": "CARGO"
+        },
+        {
+          "text": "DIRECTOR",
+          "x": 73.12,
+          "y": 308.04,
+          "w": 32.55,
+          "h": 9.87,
+          "type": "CARGO"
+        },
+        {
+          "text": "DIRECTOR DE",
+          "x": 252.52,
+          "y": 308.04,
+          "w": 41.7,
+          "h": 9.87,
+          "type": "CARGO"
+        },
+        {
+          "text": "SUSTENTABILIDAD",
+          "x": 492.28,
+          "y": 308.04,
+          "w": 54.37,
+          "h": 9.87,
+          "type": "CARGO"
+        },
+        {
+          "text": "DIRECTOR DE",
+          "x": 560.2,
+          "y": 308.04,
+          "w": 41.87,
+          "h": 9.87,
+          "type": "CARGO"
+        },
+        {
+          "text": "DIRECTOR DE",
+          "x": 741.76,
+          "y": 308.04,
+          "w": 41.87,
+          "h": 9.87,
+          "type": "CARGO"
+        },
+        {
+          "text": "COMERCIAL",
+          "x": 11.2,
+          "y": 304.44,
+          "w": 36.45,
+          "h": 9.87,
+          "type": "CARGO"
+        },
+        {
+          "text": "COMERCIAL Y",
+          "x": 129.4,
+          "y": 304.44,
+          "w": 41.87,
+          "h": 9.87,
+          "type": "CARGO"
+        },
+        {
+          "text": "TECNOLOGÍA Y",
+          "x": 189.28,
+          "y": 304.44,
+          "w": 44.82,
+          "h": 9.87,
+          "type": "CARGO"
+        },
+        {
+          "text": "EXCELENCIA",
+          "x": 315.52,
+          "y": 304.44,
+          "w": 38.7,
+          "h": 9.87,
+          "type": "CARGO"
+        },
+        {
+          "text": "GESTIÓN DE LAS",
+          "x": 371.68,
+          "y": 304.44,
+          "w": 49.63,
+          "h": 9.87,
+          "type": "CARGO"
+        },
+        {
+          "text": "SECURITY",
+          "x": 442.12,
+          "y": 304.44,
+          "w": 31.64,
+          "h": 9.87,
+          "type": "CARGO"
+        },
+        {
+          "text": "FREIGHT",
+          "x": 628.6,
+          "y": 304.44,
+          "w": 27.84,
+          "h": 9.87,
+          "type": "CARGO"
+        },
+        {
+          "text": "NEGOCIOS",
+          "x": 687.4,
+          "y": 304.44,
+          "w": 33.67,
+          "h": 9.87,
+          "type": "CARGO"
+        },
+        {
+          "text": "COMERCIAL",
+          "x": 71.2,
+          "y": 300.96,
+          "w": 36.45,
+          "h": 9.87,
+          "type": "CARGO"
+        },
+        {
+          "text": "OPERACIONES",
+          "x": 251.32,
+          "y": 300.96,
+          "w": 44.11,
+          "h": 9.87,
+          "type": "CARGO"
+        },
+        {
+          "text": "LOGWARE",
+          "x": 565.12,
+          "y": 300.96,
+          "w": 31.86,
+          "h": 9.87,
+          "type": "CARGO"
+        },
+        {
+          "text": "NEGOCIOS HOP",
+          "x": 739.24,
+          "y": 300.96,
+          "w": 46.9,
+          "h": 9.87,
+          "type": "CARGO"
+        },
+        {
+          "text": "FARMA",
+          "x": 17.92,
+          "y": 297.48,
+          "w": 23.0,
+          "h": 9.87,
+          "type": "CARGO"
+        },
+        {
+          "text": "MARKETING",
+          "x": 131.92,
+          "y": 297.48,
+          "w": 36.68,
+          "h": 9.87,
+          "type": "CARGO"
+        },
+        {
+          "text": "SISTEMAS",
+          "x": 195.88,
+          "y": 297.48,
+          "w": 31.64,
+          "h": 9.87,
+          "type": "CARGO"
+        },
+        {
+          "text": "OPERACIONAL",
+          "x": 313.12,
+          "y": 297.48,
+          "w": 43.62,
+          "h": 9.87,
+          "type": "CARGO"
+        },
+        {
+          "text": "PERSONAS",
+          "x": 379.24,
+          "y": 297.48,
+          "w": 34.27,
+          "h": 9.87,
+          "type": "CARGO"
+        },
+        {
+          "text": "MANAGER",
+          "x": 442.12,
+          "y": 297.48,
+          "w": 31.57,
+          "h": 9.87,
+          "type": "CARGO"
+        },
+        {
+          "text": "FORWARDER",
+          "x": 622.72,
+          "y": 297.48,
+          "w": 39.77,
+          "h": 9.87,
+          "type": "CARGO"
+        },
+        {
+          "text": "CROSSBORDER",
+          "x": 680.8,
+          "y": 297.48,
+          "w": 46.82,
+          "h": 9.87,
+          "type": "CARGO"
+        },
+        {
+          "text": "COMUNICACIONES",
+          "x": 492.16,
+          "y": 293.88,
+          "w": 54.83,
+          "h": 9.87,
+          "type": "CARGO"
+        }
+      ],
+      "nombres": [
+        {
+          "text": "Carlos Cirimelo",
+          "x": 362.56,
+          "y": 424.78,
+          "w": 64.77,
+          "h": 12.8,
+          "type": "NOMBRE"
+        },
+        {
+          "text": "Walter Santagatti",
+          "x": 65.08,
+          "y": 293.88,
+          "w": 48.6,
+          "h": 9.87,
+          "type": "NOMBRE"
+        },
+        {
+          "text": "Enrique Gil",
+          "x": 256.72,
+          "y": 293.88,
+          "w": 33.23,
+          "h": 9.87,
+          "type": "NOMBRE"
+        },
+        {
+          "text": "Alejandro Rinaldi",
+          "x": 556.6,
+          "y": 293.88,
+          "w": 48.98,
+          "h": 9.87,
+          "type": "NOMBRE"
+        },
+        {
+          "text": "Iván Amas",
+          "x": 746.92,
+          "y": 293.88,
+          "w": 31.42,
+          "h": 9.87,
+          "type": "NOMBRE"
+        },
+        {
+          "text": "Lucas Capuano",
+          "x": 7.12,
+          "y": 290.4,
+          "w": 44.68,
+          "h": 9.87,
+          "type": "NOMBRE"
+        },
+        {
+          "text": "Juan Miguel Calvo",
+          "x": 124.24,
+          "y": 290.4,
+          "w": 52.11,
+          "h": 9.87,
+          "type": "NOMBRE"
+        },
+        {
+          "text": "Alejandro Rinaldi",
+          "x": 187.24,
+          "y": 290.4,
+          "w": 48.98,
+          "h": 9.87,
+          "type": "NOMBRE"
+        },
+        {
+          "text": "Luis Díaz",
+          "x": 320.92,
+          "y": 290.4,
+          "w": 27.84,
+          "h": 9.87,
+          "type": "NOMBRE"
+        },
+        {
+          "text": "María Suero",
+          "x": 378.76,
+          "y": 290.4,
+          "w": 35.44,
+          "h": 9.87,
+          "type": "NOMBRE"
+        },
+        {
+          "text": "Fernando Antón",
+          "x": 434.92,
+          "y": 290.4,
+          "w": 46.21,
+          "h": 9.87,
+          "type": "NOMBRE"
+        },
+        {
+          "text": "Iván Amas",
+          "x": 626.92,
+          "y": 290.4,
+          "w": 31.42,
+          "h": 9.87,
+          "type": "NOMBRE"
+        },
+        {
+          "text": "Maximiliano Ganin",
+          "x": 678.04,
+          "y": 290.4,
+          "w": 52.44,
+          "h": 9.87,
+          "type": "NOMBRE"
+        },
+        {
+          "text": "Verónica Zampa",
+          "x": 496.36,
+          "y": 286.93,
+          "w": 46.41,
+          "h": 9.87,
+          "type": "NOMBRE"
+        }
+      ],
+      "otros": [
+        {
+          "text": "NUMERO",
+          "x": 633.4,
+          "y": 552.29,
+          "w": 49.26,
+          "h": 14.2,
+          "type": "TITLE"
+        },
+        {
+          "text": "RA 09 5 51 01",
+          "x": 706.53,
+          "y": 552.29,
+          "w": 68.42,
+          "h": 14.2,
+          "type": "TITLE"
+        },
+        {
+          "text": "VIGENCIA",
+          "x": 633.4,
+          "y": 540.05,
+          "w": 52.82,
+          "h": 14.2,
+          "type": "TITLE"
+        },
+        {
+          "text": "00/00/0000",
+          "x": 706.53,
+          "y": 540.05,
+          "w": 54.65,
+          "h": 14.2,
+          "type": "OTHER"
+        },
+        {
+          "text": "CEO",
+          "x": 388.12,
+          "y": 533.26,
+          "w": 30.52,
+          "h": 16.24,
+          "type": "OTHER"
+        },
+        {
+          "text": "REEMPLAZA",
+          "x": 633.4,
+          "y": 527.93,
+          "w": 65.77,
+          "h": 14.2,
+          "type": "TITLE"
+        },
+        {
+          "text": "00/00/0000",
+          "x": 706.53,
+          "y": 527.93,
+          "w": 54.65,
+          "h": 14.2,
+          "type": "OTHER"
+        },
+        {
+          "text": "PAGINA",
+          "x": 633.4,
+          "y": 515.81,
+          "w": 42.62,
+          "h": 14.2,
+          "type": "TITLE"
+        },
+        {
+          "text": "1 de 1",
+          "x": 706.47,
+          "y": 516.03,
+          "w": 29.32,
+          "h": 13.12,
+          "type": "OTHER"
+        },
+        {
+          "text": "CEO",
+          "x": 384.04,
+          "y": 435.34,
+          "w": 21.77,
+          "h": 12.8,
+          "type": "OTHER"
+        },
+        {
+          "text": "Asistente",
+          "x": 270.64,
+          "y": 387.96,
+          "w": 26.61,
+          "h": 9.87,
+          "type": "TEXT"
+        },
+        {
+          "text": "Bárbara Ivanoski",
+          "x": 259.84,
+          "y": 381.0,
+          "w": 48.22,
+          "h": 9.87,
+          "type": "TEXT"
+        },
+        {
+          "text": "Y",
+          "x": 515.68,
+          "y": 300.96,
+          "w": 7.64,
+          "h": 9.87,
+          "type": "OTHER"
+        }
+      ]
+    }
+  }
+}
